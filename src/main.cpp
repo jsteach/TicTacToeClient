@@ -7,6 +7,5 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 #else
 int main(int argc, char** argv){
 #endif
-    raylib_start();
-    return 0;
+    return raylib_start();
 }

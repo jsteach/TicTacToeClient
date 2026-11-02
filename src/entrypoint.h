@@ -4,7 +4,7 @@
 extern "C"{
 #endif
 
-void raylib_start(void);
+int raylib_start(void);
 
 #ifdef __cplusplus
 }

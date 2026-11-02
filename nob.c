@@ -32,6 +32,7 @@ int main(int argc, char** argv){
       cmd_append(&cmd,o_files.items[i]);
   }
   nob_cc_output(&cmd, "./Deployment/game.exe");
+  cmd_append(&cmd,"-lstdc++");
   cmd_append(&cmd,RAYLIB_LFLAGS);
   if(!cmd_run_sync_and_reset(&cmd)) return 1;
 }
